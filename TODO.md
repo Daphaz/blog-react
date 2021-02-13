@@ -8,13 +8,13 @@
 ---
 
 ## Design
-- [ ] Make a moonBoard
-- [ ] Choose a color palette
-- [ ] Choose a font
-- [ ] Create a logo
-- [ ] Do the userflows
-- [ ] Create a site map
-- [ ] Design the wireframes
+- [x] Make a moonBoard
+- [x] Choose a color palette
+- [x] Choose a font
+- [x] Create a logo
+- [x] Do the userflows
+- [x] Create a site map
+- [x] Design the wireframes
 - [ ] Create a model
 - [ ] Make a prototype
 
