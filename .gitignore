@@ -1,0 +1,19 @@
+#config ide
+.vscode
+.idea
+
+#modules
+/node_modules
+
+#Build
+/dist
+
+#config
+.eslintrc.js
+.prettierrc.json
+.babelrc
+package-lock.json
+
+#env
+.env
+.env.local
