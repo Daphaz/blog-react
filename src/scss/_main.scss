@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	background-color: $white;
+	color: $black;
+	font-family: $rob;
+}
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url("../../assets/images/bg.png") center / cover no-repeat;
+}
+.container {
+	display: grid;
+	min-height: 100vh;
+	padding: 2.5rem;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.15fr 0.15fr 1fr;
+	grid-template-areas:
+		"nav"
+		"cat"
+		"main";
+	gap: 1rem;
+	@include media-max("1024px") {
+		padding: 2rem;
+		grid-template-rows: 0.05fr 0.05fr 1fr;
+	}
+}
