@@ -1,0 +1,22 @@
+.main {
+	grid-area: main2;
+	figure {
+		height: 100%;
+		@extend %flex-column;
+		justify-content: space-between;
+		img {
+			object-fit: cover;
+			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+			filter: grayscale(100%);
+		}
+		h2 {
+			@extend %title;
+		}
+		h4 {
+			@extend %subtitle;
+		}
+		p {
+			@extend %text;
+		}
+	}
+}
