@@ -5,6 +5,7 @@ const ContentArticle = () => {
 		<div className="content">
 			<article>
 				<img
+					className="content-img"
 					src="https://images.pexels.com/photos/3912981/pexels-photo-3912981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 					width="100%"
 					height="170px"
@@ -15,6 +16,7 @@ const ContentArticle = () => {
 			</article>
 			<article>
 				<img
+					className="content-img"
 					src="https://images.pexels.com/photos/3912981/pexels-photo-3912981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 					width="100%"
 					height="170px"

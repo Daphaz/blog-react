@@ -31,5 +31,11 @@
 		p {
 			@extend %text;
 		}
+		@include media-max("1340px") {
+			border-top: none;
+		}
+	}
+	@include media-max("1340px") {
+		border-right: none;
 	}
 }

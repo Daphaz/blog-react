@@ -34,4 +34,15 @@
 			@extend %text;
 		}
 	}
+	@include media-max("1340px") {
+		border: none;
+		.top,
+		.bottom {
+			padding-left: 0;
+			height: 100%;
+		}
+		.bottom {
+			border: none;
+		}
+	}
 }

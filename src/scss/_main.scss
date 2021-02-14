@@ -30,8 +30,12 @@ body {
 		"cat"
 		"main";
 	gap: 1rem;
-	@include media-max("1024px") {
-		padding: 2rem;
+	@include media-max("1340px") {
+		padding: 0 2rem 2rem;
 		grid-template-rows: 0.05fr 0.05fr 1fr;
+	}
+	@include media-max("425px") {
+		padding: 0 1rem 1rem;
+		grid-template-rows: 0.03fr 0.02fr 1fr;
 	}
 }

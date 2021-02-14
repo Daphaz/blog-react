@@ -5,7 +5,7 @@
 	article {
 		img {
 			object-fit: cover;
-			-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+			-webkit-filter: grayscale(100%);
 			filter: grayscale(100%);
 		}
 		h2 {
@@ -15,5 +15,12 @@
 			@extend %text;
 		}
 		padding-bottom: 1rem;
+	}
+	@include media-max("1340px") {
+		border: none;
+		padding-left: 0;
+		.content-img {
+			height: 350px;
+		}
 	}
 }
