@@ -8,20 +8,15 @@
 ---
 
 ## Design
-- [ ] Make a moonBoard
-- [ ] Choose a color palette
-- [ ] Choose a font
-- [ ] Create a logo
-- [ ] Do the userflows
-- [ ] Create a site map
-- [ ] Design the wireframes
-- [ ] Create a model
-- [ ] Make a prototype
+- [x] Make a moonBoard
+- [x] Choose a color palette
+- [x] Choose a font
+- [x] Create a logo
 
 ---
 
 ## Components
-- [ ] Header
+- [x] Header
 - [ ] Navigation
 - [ ] Section
 - [ ] Search
@@ -30,7 +25,7 @@
 ---
 
 ## Routes
-- [ ] Home page
+- [x] Home page
 - [ ] *Maybe About*
 - [ ] Categories
 - [ ] One Article
