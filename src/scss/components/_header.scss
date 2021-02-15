@@ -1,0 +1,32 @@
+.header {
+	z-index: 10;
+	grid-area: nav;
+	@extend %flex-between;
+	.links-menu {
+		@extend %flex-center;
+		a {
+			@extend %links;
+		}
+		a:last-child {
+			@extend %flex-between;
+			margin-left: 1rem;
+			p {
+				@extend %links;
+			}
+			.burger {
+				margin-left: 1rem;
+				span {
+					margin: 8px 0;
+					display: block;
+					width: 2rem;
+					height: 2px;
+					border-radius: 999px;
+					background-color: $black;
+					&:last-child {
+						width: 1rem;
+					}
+				}
+			}
+		}
+	}
+}

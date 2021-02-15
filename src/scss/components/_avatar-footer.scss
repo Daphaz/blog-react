@@ -1,0 +1,17 @@
+.avatar-footer {
+	@extend %flex-center;
+	justify-content: flex-start;
+	img {
+		border-radius: $rad-profile;
+		margin-right: 1rem;
+	}
+	legend {
+		@extend %flex-column;
+		h6 {
+			@extend %author;
+		}
+		p {
+			@extend %sub-author;
+		}
+	}
+}

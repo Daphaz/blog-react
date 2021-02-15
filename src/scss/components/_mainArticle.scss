@@ -1,0 +1,40 @@
+.main {
+	grid-area: main2;
+	figure {
+		height: 100%;
+		@extend %flex-column;
+		justify-content: space-between;
+		img {
+			object-fit: cover;
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+		h2 {
+			@extend %title;
+		}
+		p {
+			@extend %text;
+		}
+		@include media-max("1340px") {
+			justify-content: space-evenly;
+		}
+	}
+	.top {
+		height: 50%;
+		margin-bottom: 1rem;
+	}
+	.bottom {
+		height: 50%;
+	}
+	.avatar-footer {
+		@include media-max("1340px") {
+			margin-top: 1rem;
+		}
+	}
+}
+
+@include media-max("1340px") {
+	.main-img {
+		height: 550px;
+	}
+}

@@ -20,8 +20,9 @@ You're sections headers will be used to reference location of destination.
 
 #### Technologies
 
-- React
-- Figma
+- React / React-router-dom
+- axios / dev.to api
+- react-loading-skeleton
 
 <div style="display:flex;justify-content:flex-end;">
 <a href="#blog-with-react" style="text-align:right;">Back on 🔝</a>

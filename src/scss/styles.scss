@@ -1,1 +1,5 @@
-@import "./variables", "./placeholders", "./mixins", "./main";
+@import "./variables", "./mixins", "./placeholders", "./main";
+@import "./components/header", "./components/asideLeft",
+	"./components/avatar-footer", "./components/mainArticle",
+	"./components/contentArticle", "./components/asideRight";
+@import "./routes/home";

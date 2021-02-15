@@ -1,0 +1,32 @@
+.content {
+	grid-area: content;
+	border-left: 1px solid $grey;
+	padding-left: 0.5rem;
+	article {
+		img {
+			object-fit: cover;
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+		h2 {
+			@extend %subtitle;
+		}
+		p {
+			@extend %text;
+		}
+		padding-bottom: 1rem;
+	}
+	@include media-max("1340px") {
+		border: none;
+		padding-left: 0;
+		.content-img {
+			height: 350px;
+		}
+		article {
+			border-bottom: 1px solid $grey;
+			&:last-child {
+				padding-top: 1rem;
+			}
+		}
+	}
+}
