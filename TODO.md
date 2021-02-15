@@ -12,16 +12,11 @@
 - [x] Choose a color palette
 - [x] Choose a font
 - [x] Create a logo
-- [x] Do the userflows
-- [x] Create a site map
-- [x] Design the wireframes
-- [ ] Create a model
-- [ ] Make a prototype
 
 ---
 
 ## Components
-- [ ] Header
+- [x] Header
 - [ ] Navigation
 - [ ] Section
 - [ ] Search
@@ -30,7 +25,7 @@
 ---
 
 ## Routes
-- [ ] Home page
+- [x] Home page
 - [ ] *Maybe About*
 - [ ] Categories
 - [ ] One Article
