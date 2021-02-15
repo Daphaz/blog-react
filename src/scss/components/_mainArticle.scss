@@ -12,15 +12,19 @@
 		h2 {
 			@extend %title;
 		}
-		h4 {
-			@extend %subtitle;
-			@include media-max("1340px") {
-				padding: 1rem 0;
-			}
-		}
 		p {
 			@extend %text;
 		}
+		@include media-max("1340px") {
+			justify-content: space-evenly;
+		}
+	}
+	.top {
+		height: 50%;
+		margin-bottom: 1rem;
+	}
+	.bottom {
+		height: 50%;
 	}
 	.avatar-footer {
 		@include media-max("1340px") {

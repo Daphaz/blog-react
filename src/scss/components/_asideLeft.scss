@@ -15,6 +15,9 @@
 		p {
 			@extend %text;
 		}
+		@include media-max("1340px") {
+			justify-content: space-around;
+		}
 	}
 	.bottom {
 		@extend %flex-column;
@@ -32,10 +35,12 @@
 			@extend %text;
 		}
 		@include media-max("1340px") {
-			border-top: none;
+			justify-content: space-around;
+			border-bottom: 1px solid $grey;
 		}
 	}
 	@include media-max("1340px") {
 		border-right: none;
+		border-top: 1px solid $grey;
 	}
 }

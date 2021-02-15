@@ -6,8 +6,6 @@
 		@extend %flex-center;
 		a {
 			@extend %links;
-			text-decoration: none;
-			color: inherit;
 		}
 		a:last-child {
 			@extend %flex-between;

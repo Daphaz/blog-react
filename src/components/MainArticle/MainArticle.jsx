@@ -1,33 +1,100 @@
 import React from "react";
+import Skeleton from "react-loading-skeleton";
 
-const MainArticle = () => {
+import AvatarFooter from "../AvatarFooter.jsx";
+
+const MainArticle = ({ articles }) => {
 	return (
 		<main className="main">
-			<figure>
-				<img
-					className="main-img"
-					src="https://images.pexels.com/photos/3912981/pexels-photo-3912981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-					width="100%"
-					height="300px"
-					alt="image post"
-				/>
-				<h2>Title</h2>
-				<h4>Lorem ipsum dolor sit amet.</h4>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
-					maiores voluptatem est harum ea voluptatibus beatae! Eveniet in error
-					laboriosam omnis dicta quidem aperiam facere alias, ea animi, tempora
-					maxime.aliquid vel dolore? Autem, soluta aliquam a modi error culpa
-					dolorum, praesentium atque incidunt rem, eveniet quisquam?
-				</p>
-				<div className="avatar-footer">
-					<img src="https://via.placeholder.com/50" alt="author of article" />
-					<legend>
-						<h6>Jhon Doe</h6>
-						<p>Editor</p>
-					</legend>
-				</div>
-			</figure>
+			{articles.length > 1 ? (
+				<>
+					<figure className="top">
+						<a
+							href={articles[0].url}
+							target="_blank"
+							referrerPolicy="no-referrer">
+							<img
+								className="main-img"
+								src={articles[0].cover_image}
+								width="100%"
+								height="300px"
+								alt="image cover a post"
+							/>
+							<h2>{articles[0].title}</h2>
+						</a>
+						<p>{articles[0].description}</p>
+						<AvatarFooter
+							websiteUrl={articles[0].user.website_url}
+							profileImg={articles[0].user.profile_image_90}
+							name={articles[0].user.name}
+						/>
+					</figure>
+					<figure className="bottom">
+						<a
+							href={articles[1].url}
+							target="_blank"
+							referrerPolicy="no-referrer">
+							<img
+								className="main-img"
+								src={articles[1].cover_image}
+								width="100%"
+								height="300px"
+								alt="image cover a post"
+							/>
+							<h2>{articles[1].title}</h2>
+						</a>
+						<p>{articles[1].description}</p>
+						<AvatarFooter
+							websiteUrl={articles[1].user.website_url}
+							profileImg={articles[1].user.profile_image_90}
+							name={articles[1].user.name}
+						/>
+					</figure>
+				</>
+			) : (
+				<>
+					<figure className="top">
+						<Skeleton className="main-img" width={"100%"} height={300} />
+						<h2>
+							<Skeleton height={50} />
+						</h2>
+						<p>
+							<Skeleton count={5} />
+						</p>
+						<div className="avatar-footer">
+							<Skeleton circle={true} width={50} height={50} />
+							<legend>
+								<h6>
+									<Skeleton />
+								</h6>
+								<p>
+									<Skeleton />
+								</p>
+							</legend>
+						</div>
+					</figure>
+					<figure className="bottom">
+						<Skeleton className="main-img" width={"100%"} height={300} />
+						<h2>
+							<Skeleton height={50} />
+						</h2>
+						<p>
+							<Skeleton count={5} />
+						</p>
+						<div className="avatar-footer">
+							<Skeleton circle={true} width={50} height={50} />
+							<legend>
+								<h6>
+									<Skeleton />
+								</h6>
+								<p>
+									<Skeleton />
+								</p>
+							</legend>
+						</div>
+					</figure>
+				</>
+			)}
 		</main>
 	);
 };

@@ -22,5 +22,11 @@
 		.content-img {
 			height: 350px;
 		}
+		article {
+			border-bottom: 1px solid $grey;
+			&:last-child {
+				padding-top: 1rem;
+			}
+		}
 	}
 }

@@ -2,6 +2,7 @@ const { merge } = require("webpack-merge");
 const commonConfiguration = require("./webpack.common.js");
 const ip = require("internal-ip");
 const portFinderSync = require("portfinder-sync");
+const Dotenv = require("dotenv-webpack");
 
 const infoColor = (_message) => {
 	return `\u001b[1m\u001b[34m${_message}\u001b[39m\u001b[22m`;
@@ -9,6 +10,7 @@ const infoColor = (_message) => {
 
 module.exports = merge(commonConfiguration, {
 	mode: "development",
+	plugins: [new Dotenv()],
 	module: {
 		rules: [
 			{
