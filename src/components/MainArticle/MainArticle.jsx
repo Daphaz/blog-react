@@ -9,10 +9,7 @@ const MainArticle = ({ articles }) => {
 			{articles.length > 1 ? (
 				<>
 					<figure className="top">
-						<a
-							href={articles[0].url}
-							target="_blank"
-							referrerPolicy="no-referrer">
+						<a href={articles[0].url} target="_blank" rel="noopener noreferrer">
 							<img
 								className="main-img"
 								src={articles[0].cover_image}
@@ -30,10 +27,7 @@ const MainArticle = ({ articles }) => {
 						/>
 					</figure>
 					<figure className="bottom">
-						<a
-							href={articles[1].url}
-							target="_blank"
-							referrerPolicy="no-referrer">
+						<a href={articles[1].url} target="_blank" rel="noopener noreferrer">
 							<img
 								className="main-img"
 								src={articles[1].cover_image}

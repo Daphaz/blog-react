@@ -7,10 +7,7 @@ const ContentArticle = ({ articles }) => {
 			{articles.length > 2 ? (
 				<>
 					<article>
-						<a
-							href={articles[0].url}
-							target="_blank"
-							referrerPolicy="no-referrer">
+						<a href={articles[0].url} target="_blank" rel="noopener noreferrer">
 							<img
 								className="content-img"
 								src={articles[0].cover_image}
@@ -23,10 +20,7 @@ const ContentArticle = ({ articles }) => {
 						<p>by {articles[0].user.name}</p>
 					</article>
 					<article>
-						<a
-							href={articles[2].url}
-							target="_blank"
-							referrerPolicy="no-referrer">
+						<a href={articles[2].url} target="_blank" rel="noopener noreferrer">
 							<img
 								className="content-img"
 								src={articles[2].cover_image}
