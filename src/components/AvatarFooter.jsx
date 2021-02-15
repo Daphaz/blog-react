@@ -4,7 +4,7 @@ const AvatarFooter = ({ websiteUrl, profileImg, name }) => {
 	return (
 		<div className="avatar-footer">
 			{websiteUrl ? (
-				<a href={websiteUrl} target="_blank" referrerPolicy="no-referrer">
+				<a href={websiteUrl} target="_blank" rel="noopener noreferrer">
 					<img
 						src={profileImg}
 						alt="author of article"
@@ -21,7 +21,7 @@ const AvatarFooter = ({ websiteUrl, profileImg, name }) => {
 				/>
 			)}
 			<legend>
-				<h6>{name}</h6>
+				<h3>{name}</h3>
 				<p>Editor</p>
 			</legend>
 		</div>
