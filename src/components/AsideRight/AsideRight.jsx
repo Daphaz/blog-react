@@ -9,10 +9,7 @@ const AsideRight = ({ articles }) => {
 			{articles.length > 1 ? (
 				<>
 					<article className="top">
-						<a
-							href={articles[1].url}
-							target="_blank"
-							referrerPolicy="no-referrer">
+						<a href={articles[1].url} target="_blank" rel="noopener noreferrer">
 							<h2>{articles[0].title}</h2>
 						</a>
 						<p>{articles[0].description}</p>
@@ -23,10 +20,7 @@ const AsideRight = ({ articles }) => {
 						/>
 					</article>
 					<article className="bottom">
-						<a
-							href={articles[1].url}
-							target="_blank"
-							referrerPolicy="no-referrer">
+						<a href={articles[1].url} target="_blank" rel="noopener noreferrer">
 							<h2>{articles[1].title}</h2>
 						</a>
 						<p>{articles[1].description}</p>
