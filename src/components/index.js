@@ -4,6 +4,7 @@ import AsideLeft from "./AsideLeft/AsideLeft.jsx";
 import MainArticle from "./MainArticle/MainArticle.jsx";
 import ContentArticle from "./ContentArticle/ContentArticle.jsx";
 import AsideRight from "./AsideRight/AsideRight.jsx";
+import Navigation from "./Navigation/Navigation.jsx";
 
 export {
 	Header,
@@ -12,4 +13,5 @@ export {
 	MainArticle,
 	ContentArticle,
 	AsideRight,
+	Navigation,
 };

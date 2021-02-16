@@ -2,7 +2,6 @@ import React from "react";
 import Skeleton from "react-loading-skeleton";
 
 const ContentArticle = ({ articles }) => {
-	console.log(articles);
 	return (
 		<div className="content">
 			{articles.length > 1 ? (

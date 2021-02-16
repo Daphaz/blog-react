@@ -10,6 +10,7 @@ import {
 	MainArticle,
 	ContentArticle,
 	AsideRight,
+	Navigation,
 } from "../../components/";
 
 const Home = () => {
@@ -17,6 +18,10 @@ const Home = () => {
 	const [articlesReact, setArticlesReact] = useState([]);
 	const [articlesTuto, setArticlesTuto] = useState([]);
 	const [articlesCss, setArticlesCss] = useState([]);
+	const [dimensions, setDimensions] = useState({
+		height: window.innerHeight,
+		width: window.innerWidth,
+	});
 
 	const filterArticles = (articles) => {
 		//for Javascript
@@ -28,6 +33,18 @@ const Home = () => {
 		//for Css
 		FilterPost(setArticlesCss, articles, "css");
 	};
+
+	useEffect(() => {
+		let resize = () => {
+			setDimensions({
+				height: window.innerHeight,
+				width: window.innerWidth,
+			});
+		};
+		document.addEventListener("resize", resize);
+
+		return () => document.removeEventListener("resize", resize);
+	}, []);
 
 	useEffect(() => {
 		axios
@@ -42,8 +59,9 @@ const Home = () => {
 
 	return (
 		<div className="container">
+			<Navigation />
 			<div className="bg"></div>
-			<Header />
+			<Header dimensions={dimensions} />
 			<Categorie title="Latest Posts" />
 			<section className="latest-posts">
 				<AsideLeft articles={articlesReact} />

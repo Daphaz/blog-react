@@ -1,7 +1,9 @@
 .main {
 	grid-area: main2;
+	height: 100%;
+	@extend %flex-column;
+	justify-content: space-between;
 	figure {
-		height: 100%;
 		@extend %flex-column;
 		justify-content: space-between;
 		img {
@@ -20,11 +22,11 @@
 		}
 	}
 	.top {
-		height: 50%;
+		flex: 50%;
 		margin-bottom: 1rem;
 	}
 	.bottom {
-		height: 50%;
+		flex: 50%;
 	}
 	.avatar-footer {
 		@include media-max("1340px") {
@@ -36,5 +38,12 @@
 @include media-max("1340px") {
 	.main-img {
 		height: 550px;
+	}
+}
+
+@include media-max("425px") {
+	.main-img {
+		width: 100%;
+		height: auto;
 	}
 }
