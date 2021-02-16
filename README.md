@@ -23,6 +23,7 @@ You're sections headers will be used to reference location of destination.
 - React / React-router-dom
 - axios / dev.to api
 - react-loading-skeleton
+- animjs
 
 <div style="display:flex;justify-content:flex-end;">
 <a href="#blog-with-react" style="text-align:right;">Back on 🔝</a>
