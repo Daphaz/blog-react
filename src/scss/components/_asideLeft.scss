@@ -17,6 +17,7 @@
 		}
 		@include media-max("1340px") {
 			justify-content: space-around;
+			height: 100%;
 		}
 	}
 	.bottom {
@@ -37,6 +38,7 @@
 		@include media-max("1340px") {
 			justify-content: space-around;
 			border-bottom: 1px solid $grey;
+			height: 100%;
 		}
 	}
 	@include media-max("1340px") {

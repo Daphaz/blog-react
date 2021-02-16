@@ -17,7 +17,7 @@
 
 ## Components
 - [x] Header
-- [ ] Navigation
+- [x] Navigation
 - [ ] Section
 - [ ] Search
 - [ ] Filter
