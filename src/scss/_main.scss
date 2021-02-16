@@ -10,19 +10,22 @@ body {
 	background-color: $white;
 	color: $black;
 	font-family: $rob;
+	overflow-x: hidden;
 }
+
 a {
 	text-decoration: none;
 	color: inherit;
 }
 .bg {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	right: 0;
+	bottom: 0;
 	background: url("../../assets/images/bg.png") center / cover;
 	pointer-events: none;
+	overflow: hidden;
 }
 .container {
 	position: relative;
@@ -41,7 +44,12 @@ a {
 		grid-template-rows: 0.05fr 0.05fr 1fr;
 	}
 	@include media-max("425px") {
-		padding: 0 1rem 1rem;
-		grid-template-rows: 0.03fr 0.02fr 1fr;
+		padding: 0;
+		padding-top: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100vw;
 	}
 }

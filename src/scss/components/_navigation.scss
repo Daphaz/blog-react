@@ -1,0 +1,37 @@
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: $white;
+	@extend %flex-center;
+	display: none;
+	ul {
+		list-style-type: none;
+		li {
+			padding: 1rem 0;
+			a {
+				position: relative;
+				@extend %title;
+				&::before {
+					content: "";
+					position: absolute;
+					width: 0%;
+					height: 2px;
+					background-color: $black;
+					bottom: 0;
+					right: 0;
+					transition: width 0.4s ease;
+				}
+				&:hover {
+					&::before {
+						width: 100%;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+	z-index: 15;
+}
