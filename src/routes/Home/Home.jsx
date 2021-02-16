@@ -23,9 +23,9 @@ const Home = () => {
 		FilterPost(setArticlesJavascript, articles, "javascript");
 		//for React
 		FilterPost(setArticlesReact, articles, "react");
-		//for Tutorial
-		FilterPost(setArticlesTuto, articles, "tutorial");
-		//for css
+		//for Beginners
+		FilterPost(setArticlesTuto, articles, "beginners");
+		//for Css
 		FilterPost(setArticlesCss, articles, "css");
 	};
 
@@ -44,7 +44,7 @@ const Home = () => {
 		<div className="container">
 			<div className="bg"></div>
 			<Header />
-			<Categorie />
+			<Categorie title="Latest Posts" />
 			<section className="latest-posts">
 				<AsideLeft articles={articlesReact} />
 				<MainArticle articles={articlesJavascript} />

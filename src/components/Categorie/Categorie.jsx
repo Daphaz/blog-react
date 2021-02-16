@@ -1,9 +1,9 @@
 import React from "react";
 
-const Categorie = () => {
+const Categorie = ({ title }) => {
 	return (
 		<div className="categorie">
-			<h1>Latest Posts</h1>
+			<h1>{title}</h1>
 		</div>
 	);
 };
