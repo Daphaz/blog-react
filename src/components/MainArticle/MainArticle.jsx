@@ -10,13 +10,15 @@ const MainArticle = ({ articles }) => {
 				<>
 					<figure className="top">
 						<a href={articles[0].url} target="_blank" rel="noopener noreferrer">
-							<img
-								className="main-img"
-								src={articles[0].cover_image}
-								width="100%"
-								height="300px"
-								alt="image cover a post"
-							/>
+							{articles[0].cover_image && (
+								<img
+									className="main-img"
+									src={articles[0].cover_image}
+									width="100%"
+									height="300px"
+									alt="image cover a post"
+								/>
+							)}
 							<h2>{articles[0].title}</h2>
 						</a>
 						<p>{articles[0].description}</p>
@@ -28,13 +30,15 @@ const MainArticle = ({ articles }) => {
 					</figure>
 					<figure className="bottom">
 						<a href={articles[1].url} target="_blank" rel="noopener noreferrer">
-							<img
-								className="main-img"
-								src={articles[1].cover_image}
-								width="100%"
-								height="300px"
-								alt="image cover a post"
-							/>
+							{articles[1].cover_image && (
+								<img
+									className="main-img"
+									src={articles[1].cover_image}
+									width="100%"
+									height="300px"
+									alt="image cover a post"
+								/>
+							)}
 							<h2>{articles[1].title}</h2>
 						</a>
 						<p>{articles[1].description}</p>
